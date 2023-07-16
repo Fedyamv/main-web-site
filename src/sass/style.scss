@@ -1,0 +1,325 @@
+$fzh: 4.5rem;
+$fwh: 700;
+$fzt: 2rem;
+$fwt: 400;
+$color: #a8a8a8;
+$second-color: #f0f0f0;
+$third-color: #070707;
+$fourth-color: #ffffff;
+$fifth-color: #ffc700;
+$sixth-color: #000000;
+$seventh-color: #101010;
+$eight-color: #b7b7b7;
+$nine-color: #0e0e0e;
+$ten-color: #171717;
+$eleven-color: #262626;
+$twelve-color: #949494;
+$thirteen-color: #111111;
+$fourteen-color: #1a1a1a;
+$fifteen-color: #0f0f0f;
+$sixteen-color: #141414;
+$seventeen-color: #1c1c1c;
+$eighteen-color: #b8b8b8;
+$nineteen-color: #090909;
+$twenty-color: #191919;
+$twenty-one-color: #252525;
+$twenty-two-color: #363636;
+$twenty-three-color: #868686;
+$twenty-four-color: #a8a8a8;
+$twenty-five-color: #f1f1f1;
+$twenty-six-color: #ffca0d;
+
+@mixin title($second-color, $fzh, $fwh) {
+  color: $second-color;
+  font-family: Montserrat;
+  font-size: $fzh;
+  font-style: normal;
+  font-weight: $fwh;
+}
+@mixin text($fourth-color, $fzt, $fwt) {
+  color: $fourth-color;
+  font-family: Montserrat;
+  font-size: $fzt;
+  font-style: normal;
+  font-weight: $fwt;
+}
+.body {
+  background-color: $third-color;
+}
+.container {
+  //   max-width: 1440px;
+}
+.header {
+  position: sticky;
+  max-width: 1440px;
+  height: 126px;
+  margin: auto;
+  top: 0;
+  z-index: 1020;
+  &__top {
+    max-width: 1010.049px;
+    margin: 0 auto;
+    display: flex;
+    padding-left: 1.9375rem;
+    padding-top: 1.25rem;
+    align-items: center;
+  }
+
+  &__search {
+    width: 225px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 0.9375rem;
+    border: 1px solid $second-color;
+    padding-left: 2rem;
+
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: $second-color;
+
+    background: url(/src/img/lupa.png) no-repeat;
+    background-position: 13px center;
+  }
+
+  &__logo {
+    margin-left: 10.8125rem;
+    margin-right: 13.625rem;
+  }
+
+  &__end {
+    width: 172px;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__language {
+    display: flex;
+    width: 66px;
+    height: 20px;
+    justify-content: space-between;
+  }
+
+  &__ru {
+    color: $second-color;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__line {
+    width: 1px;
+    height: 20px;
+    background-color: $second-color;
+  }
+
+  &__ua {
+    color: $twenty-three-color;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__buy {
+  }
+
+  &__like {
+  }
+
+  &__bottom {
+    max-width: 1010.049px;
+    margin: 0 auto;
+    height: 51px;
+  }
+
+  &__navigation {
+  }
+
+  &__list {
+    max-width: 980px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.75rem;
+  }
+
+  &__list-item {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  &__link {
+    color: $second-color;
+  }
+}
+.header__link:hover {
+  width: 164px;
+  height: 51px;
+  padding: 0.8125rem 2.8119rem 1rem 2.875rem;
+  color: $nineteen-color;
+  font-weight: 700;
+  background: url(/src/img/background.png) no-repeat;
+}
+.bg {
+  background: url(/src/img/back.png) no-repeat;
+  background-position: top center;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  max-width: 1350px;
+  height: 760px;
+  margin: 0 auto;
+  margin-top: 75px;
+  background: url(/src/img/bg_hero.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  &__content {
+    margin-left: 90px;
+    max-width: 542px;
+    height: 436px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__title {
+    @include title($second-color, 5.125rem, 800);
+    width: 542px;
+    height: 234px;
+    line-height: 95%;
+  }
+
+  &__slogan {
+    @include title($fifth-color, 5.125rem, 800);
+
+    text-shadow: 0px 0px 15px rgba(255, 202, 13, 0.5);
+  }
+
+  &__text {
+    @include text($twenty-four-color, 1.5rem, $fwt);
+    width: 500px;
+    height: 60px;
+    line-height: normal;
+  }
+
+  &__link {
+    width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $fifth-color;
+    background: $fifth-color;
+    box-shadow: 0px 0px 10px 0px rgba(255, 199, 0, 0.6);
+    color: $seventeen-color;
+    font-family: Montserrat;
+    flex-shrink: 0;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 100%; /* 20px */
+    text-transform: uppercase;
+  }
+}
+.services {
+  margin: 0 auto;
+  width: 1092px;
+  height: 1159px;
+  margin-top: 149px;
+
+  &__head {
+    @include title($second-color, $fzh, $fwh);
+    text-align: center;
+    line-height: normal;
+  }
+
+  &__slogan {
+    color: $fifth-color;
+  }
+
+  &__sub-title {
+    color: $twelve-color;
+    text-align: center;
+    font-family: Montserrat Alternates;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  &__grid {
+    margin-top: 83px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 132px;
+  }
+
+  &__item {
+    width: 334px;
+    height: 408px;
+    background: url(/src/img/grid_bg.png) no-repeat;
+    display: flex;
+
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin-top: 33px;
+    width: 181px;
+    height: 87px;
+    color: $second-color;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin-top: 15px;
+    width: 176px;
+    height: 40px;
+    color: $second-color;
+    font-family: Montserrat Alternates;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  &__button {
+    margin-top: 20px;
+    color: $fifth-color;
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background: $ten-color;
+  }
+
+  &__icon {
+    margin-top: 30px;
+  }
+}
