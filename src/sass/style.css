@@ -257,4 +257,44 @@
 }
 .services__icon {
   margin-top: 30px;
+}
+
+.printing {
+  margin: 0 auto;
+  max-width: 1314.638px;
+  height: 577.765px;
+  margin-top: 220px;
+}
+.printing__title {
+  color: #f0f0f0;
+  font-family: Montserrat;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+}
+.printing__slogan {
+  color: #ffc700;
+}
+.printing__sub-title {
+  text-align: center;
+  color: #b8b8b8;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.printing__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.printing__img-my {
+  background: url(/src/img/Vector\ 9.png) no-repeat;
+  background-position: left center;
+}
+.printing__img-you {
+  background: url(/src/img/Vector\ 8.png) no-repeat;
+  background-position: right center;
 }/*# sourceMappingURL=style.css.map */

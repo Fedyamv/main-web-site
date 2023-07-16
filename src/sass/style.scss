@@ -323,3 +323,50 @@ $twenty-six-color: #ffca0d;
     margin-top: 30px;
   }
 }
+.printing {
+  margin: 0 auto;
+  max-width: 1314.638px;
+  height: 577.765px;
+  margin-top: 220px;
+  &__title {
+    @include title($second-color, 3rem, 600);
+    text-align: center;
+  }
+
+  &__slogan {
+    color: $fifth-color;
+  }
+
+  &__sub-title {
+    text-align: center;
+    color: $eighteen-color;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__img {
+  }
+}
+.printing {
+  &__img-my {
+    background: url(/src/img/Vector\ 9.png) no-repeat;
+    background-position: left center;
+  }
+
+  &__img {
+  }
+
+  &__img-you {
+    background: url(/src/img/Vector\ 8.png) no-repeat;
+    background-position: right center;
+  }
+}
