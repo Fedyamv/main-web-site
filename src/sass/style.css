@@ -271,13 +271,13 @@
   font-size: 3rem;
   font-style: normal;
   font-weight: 600;
-  text-align: center;
+  margin-left: 68px;
 }
 .printing__slogan {
   color: #ffc700;
 }
 .printing__sub-title {
-  text-align: center;
+  margin-left: 68px;
   color: #b8b8b8;
   font-family: Montserrat;
   font-size: 32px;
@@ -296,5 +296,96 @@
 }
 .printing__img-you {
   background: url(/src/img/Vector\ 8.png) no-repeat;
+  background-position: right center;
+}
+
+.shares {
+  width: 1450px;
+  margin: 0 auto;
+  background-image: url(/src/img/shares_bg.png);
+  background-repeat: no-repeat;
+}
+.shares__head {
+  margin-left: 164px;
+  color: #f0f0f0;
+  font-family: Montserrat;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 600;
+}
+.shares__slogan {
+  color: #ffc700;
+}
+.shares__sub-title {
+  margin-left: 164px;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.shares__content {
+  position: relative;
+  display: flex;
+  width: 1280px;
+  height: 630px;
+  margin: 0 auto;
+}
+.shares__text {
+  background: url(/src/img/icon_1_shares.png) no-repeat;
+  background-position: left center;
+  position: relative;
+  z-index: 3;
+  margin-top: 142px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 91px;
+  height: 254px;
+}
+.shares__title {
+  color: #252525;
+  font-family: Montserrat;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.shares__paragraph {
+  margin-top: 10px;
+  margin-bottom: 34px;
+  width: 587px;
+  color: #262626;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.shares__button {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 100%; /* 20px */
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 60px;
+  background-color: #0f0f0f;
+  box-shadow: 0px 0px 25px 0px rgba(15, 15, 15, 0.9);
+}
+.shares__img {
+  z-index: 2;
+  position: absolute;
+  left: 580px;
+  bottom: 100px;
+  width: 675.131px;
+  height: 604.232px;
+  background: url(/src/img/icon_2_shares.png) no-repeat;
   background-position: right center;
 }/*# sourceMappingURL=style.css.map */
