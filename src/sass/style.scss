@@ -673,3 +673,86 @@ $twenty-six-color: #ffca0d;
     line-height: normal;
   }
 }
+.reviews {
+  &__title {
+    color: $second-color;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 4.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  &__slogan {
+    color: $fifth-color;
+  }
+
+  &__sub-title {
+    color: $twelve-color;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Montserrat Alternates;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    width: 675px;
+  }
+
+  &__content {
+    margin-top: 157px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/src/img/reviews_bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__icon {
+    width: 439.5px;
+    height: 900px;
+
+    &_left {
+      margin-right: 60px;
+    }
+
+    &_right {
+    }
+  }
+}
+.doubts {
+  margin: 0 auto;
+  max-width: 1006px;
+  height: 652px;
+  margin-top: 185px;
+  margin-bottom: 260px;
+
+  &__title {
+    color: $fourth-color;
+    font-family: Montserrat;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  &__slogan {
+    color: $fifth-color;
+  }
+
+  &__sub-title {
+    color: $twelve-color;
+    font-family: Montserrat Alternates;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  &__video {
+    margin-top: 40px;
+    margin-left: 90px;
+  }
+}

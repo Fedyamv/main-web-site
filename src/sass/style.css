@@ -578,4 +578,74 @@
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+}
+
+.reviews__title {
+  color: #f0f0f0;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 4.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.reviews__slogan {
+  color: #ffc700;
+}
+.reviews__sub-title {
+  color: #949494;
+  margin: 0 auto;
+  text-align: center;
+  font-family: Montserrat Alternates;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  width: 675px;
+}
+.reviews__content {
+  margin-top: 157px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/src/img/reviews_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.reviews__icon {
+  width: 439.5px;
+  height: 900px;
+}
+.reviews__icon_left {
+  margin-right: 60px;
+}
+.doubts {
+  margin: 0 auto;
+  max-width: 1006px;
+  height: 652px;
+  margin-top: 185px;
+  margin-bottom: 260px;
+}
+.doubts__title {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.doubts__slogan {
+  color: #ffc700;
+}
+.doubts__sub-title {
+  color: #949494;
+  font-family: Montserrat Alternates;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.doubts__video {
+  margin-top: 40px;
+  margin-left: 90px;
 }/*# sourceMappingURL=style.css.map */
