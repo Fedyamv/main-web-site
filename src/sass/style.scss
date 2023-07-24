@@ -428,7 +428,7 @@ $twenty-six-color: #ffca0d;
     margin-top: 10px;
     margin-bottom: 34px;
     width: 587px;
-    color: #262626;
+    color: $eleven-color;
     font-family: Montserrat;
     font-size: 24px;
     font-style: normal;
@@ -449,7 +449,7 @@ $twenty-six-color: #ffca0d;
     justify-content: center;
     width: 200px;
     height: 60px;
-    background-color: #0f0f0f;
+    background-color: $fifteen-color;
     box-shadow: 0px 0px 25px 0px rgba(15, 15, 15, 0.9);
   }
 
@@ -463,4 +463,142 @@ $twenty-six-color: #ffca0d;
     background: url(/src/img/icon_2_shares.png) no-repeat;
     background-position: right center;
   }
+}
+.selling {
+  margin: 0 auto;
+  max-width: 1440px;
+  margin-top: 169px;
+
+  &__title {
+    color: $twenty-five-color;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  &__slogan {
+    color: $fifth-color;
+  }
+
+  &__sub-title {
+    color: $twelve-color;
+    text-align: center;
+    font-family: Montserrat Alternates;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  &__navigation {
+    max-width: 927px;
+    margin: 0 auto;
+    margin-top: 87px;
+  }
+
+  &__list {
+    max-width: 927px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__all {
+    width: 92px;
+    height: 46px;
+    background-color: $fifth-color;
+    box-shadow: 0px 0px 8px 0px rgba(255, 199, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__all-link {
+    color: $third-color;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  &__list-item {
+  }
+
+  &__link {
+    color: $fourth-color;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__flex {
+    margin: 0 auto;
+    max-width: 1103px;
+    height: 325px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 93px;
+  }
+
+  &__content {
+    width: 229px;
+    height: 325px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__img {
+    width: 229px;
+    height: 241px;
+  }
+
+  &__text {
+    margin-top: 26px;
+    color: $fourth-color;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  &__price {
+    margin-top: 3px;
+    color: $second-color;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
+.selling__link:hover {
+  color: $third-color;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.selling__list-item:hover {
+  width: 110px;
+  height: 46px;
+  background-color: $fifth-color;
+  box-shadow: 0px 0px 8px 0px rgba(255, 199, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
