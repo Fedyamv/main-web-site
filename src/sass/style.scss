@@ -341,7 +341,7 @@ $twenty-six-color: #ffca0d;
     margin-left: 68px;
     color: $eighteen-color;
     font-family: Montserrat;
-    font-size: 32px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -388,7 +388,7 @@ $twenty-six-color: #ffca0d;
     margin-left: 164px;
     color: $fourth-color;
     font-family: Montserrat;
-    font-size: 32px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -417,7 +417,7 @@ $twenty-six-color: #ffca0d;
   &__title {
     color: $twenty-one-color;
     font-family: Montserrat;
-    font-size: 52px;
+    font-size: 3.25rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -430,7 +430,7 @@ $twenty-six-color: #ffca0d;
     width: 587px;
     color: $eleven-color;
     font-family: Montserrat;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -439,7 +439,7 @@ $twenty-six-color: #ffca0d;
   &__button {
     color: $fourth-color;
     font-family: Montserrat;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-style: normal;
     font-weight: 800;
     line-height: 100%; /* 20px */
@@ -473,7 +473,7 @@ $twenty-six-color: #ffca0d;
     color: $twenty-five-color;
     text-align: center;
     font-family: Montserrat;
-    font-size: 72px;
+    font-size: 4.5rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -487,7 +487,7 @@ $twenty-six-color: #ffca0d;
     color: $twelve-color;
     text-align: center;
     font-family: Montserrat Alternates;
-    font-size: 32px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -521,7 +521,7 @@ $twenty-six-color: #ffca0d;
     color: $third-color;
     text-align: center;
     font-family: Montserrat;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -534,7 +534,7 @@ $twenty-six-color: #ffca0d;
     color: $fourth-color;
     text-align: center;
     font-family: Montserrat;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -567,7 +567,7 @@ $twenty-six-color: #ffca0d;
     color: $fourth-color;
     text-align: center;
     font-family: Montserrat;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -578,7 +578,7 @@ $twenty-six-color: #ffca0d;
     color: $second-color;
     text-align: center;
     font-family: Montserrat;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -588,7 +588,7 @@ $twenty-six-color: #ffca0d;
   color: $third-color;
   text-align: center;
   font-family: Montserrat;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -601,4 +601,75 @@ $twenty-six-color: #ffca0d;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.catalog {
+  margin: 0 auto;
+  max-width: 1440px;
+  margin-top: 226px;
+  &__head {
+    color: $second-color;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 4.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  &__slogan {
+    color: $fifth-color;
+  }
+
+  &__sub-title {
+    color: $twelve-color;
+    text-align: center;
+    font-family: Montserrat Alternates;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  &__grid {
+    margin: 0 auto;
+    margin-top: 159px;
+    max-width: 1099px;
+    height: 1290px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &__content {
+    max-width: 347px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $seventh-color;
+  }
+
+  &__img {
+    margin-top: 45px;
+  }
+
+  &__title {
+    margin-top: 12px;
+    color: $fourth-color;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  &__link {
+    color: $fifth-color;
+    text-align: center;
+    font-family: Montserrat Alternates;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
 }
