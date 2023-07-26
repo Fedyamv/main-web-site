@@ -648,4 +648,112 @@
 .doubts__video {
   margin-top: 40px;
   margin-left: 90px;
+}
+
+.communication {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+.communication__title {
+  color: #f0f0f0;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 4.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.communication__slogan {
+  color: #ffc700;
+}
+.communication__sub-title {
+  color: #949494;
+  text-align: center;
+  font-family: Montserrat Alternates;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.communication__content {
+  margin: 0 auto;
+  max-width: 1099px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 208px;
+}
+.communication__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 350px;
+}
+.communication__name {
+  width: 454px;
+  height: 60px;
+  padding-left: 41px;
+  background: url(/src/img/communication__bg.png) no-repeat;
+  color: #ffc700;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.communication__icons {
+  margin-top: 35px;
+}
+.communication__button {
+  margin-top: 40px;
+  width: 200px;
+  height: 60px;
+  background: #ffc700;
+  box-shadow: 0px 0px 10px 0px rgba(255, 199, 0, 0.6);
+  color: #1c1c1c;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 100%; /* 20px */
+  text-transform: uppercase;
+}
+
+.communication__buttom {
+  margin: 0 auto;
+  margin-top: 205px;
+  width: 969px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.communication__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 283px;
+  height: 343px;
+  border-radius: 40px 0px;
+  background: #1a1a1a;
+}
+.communication__img {
+  margin-top: 58px;
+}
+.communication__head {
+  margin-top: 45px;
+  color: #f0f0f0;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.communication__paragraph {
+  margin-top: 30px;
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }/*# sourceMappingURL=style.css.map */
