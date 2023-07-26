@@ -45,9 +45,16 @@ $twenty-six-color: #ffca0d;
 }
 .body {
   background-color: $third-color;
+  height: 100%;
 }
 .container {
   //   max-width: 1440px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1 1 auto;
 }
 .header {
   position: sticky;
@@ -799,7 +806,7 @@ $twenty-six-color: #ffca0d;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 350px;
+    height: 440px;
   }
 
   &__name {
@@ -807,7 +814,7 @@ $twenty-six-color: #ffca0d;
     height: 60px;
     padding-left: 41px;
     background: url(/src/img/communication__bg.png) no-repeat;
-    color: #ffc700;
+    color: $fifth-color;
     font-family: Montserrat;
     font-size: 16px;
     font-style: normal;
@@ -830,9 +837,9 @@ $twenty-six-color: #ffca0d;
     margin-top: 40px;
     width: 200px;
     height: 60px;
-    background: #ffc700;
+    background: $fifth-color;
     box-shadow: 0px 0px 10px 0px rgba(255, 199, 0, 0.6);
-    color: #1c1c1c;
+    color: $seventeen-color;
     font-family: Montserrat;
     font-size: 20px;
     font-style: normal;
@@ -858,7 +865,7 @@ $twenty-six-color: #ffca0d;
     width: 283px;
     height: 343px;
     border-radius: 40px 0px;
-    background: #1a1a1a;
+    background: $fourteen-color;
   }
 
   &__img {
@@ -867,7 +874,7 @@ $twenty-six-color: #ffca0d;
 
   &__head {
     margin-top: 45px;
-    color: #f0f0f0;
+    color: $second-color;
     font-family: Montserrat;
     font-size: 32px;
     font-style: normal;
@@ -877,12 +884,171 @@ $twenty-six-color: #ffca0d;
 
   &__paragraph {
     margin-top: 30px;
-    color: #fff;
+    color: $fourth-color;
     text-align: center;
     font-family: Montserrat;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+  }
+}
+.footer {
+  &__content {
+    margin: 0 auto;
+
+    max-width: 1125px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.footer {
+  margin: 0 auto;
+  margin-top: 154px;
+  padding-top: 43px;
+  max-width: 1440px;
+  height: 260px;
+
+  background: $twenty-color;
+
+  &__img {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__logo {
+    margin-bottom: 14px;
+  }
+
+  &__icons {
+  }
+
+  &__info {
+  }
+
+  &__title {
+    color: $fourth-color;
+
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 18px;
+  }
+
+  &__navigation {
+  }
+
+  &__list {
+  }
+
+  &__list-item {
+    margin-bottom: 8px;
+  }
+
+  &__link {
+    color: $eight-color;
+    text-align: center;
+    font-family: Montserrat Alternates;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__item {
+    margin-top: 15px;
+    transform: rotate(8.232deg);
+  }
+
+  &__links {
+    color: $eight-color;
+    text-align: center;
+    font-family: Montserrat Alternates;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__contacts {
+  }
+
+  &__items {
+    margin-top: 19px;
+
+    transform: rotate(17.09deg);
+  }
+
+  &__a {
+    color: $eight-color;
+    text-align: center;
+    font-family: Montserrat Alternates;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__news {
+    max-width: 368px;
+  }
+
+  &__head {
+    color: $fourth-color;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  &__text {
+    color: $eight-color;
+    text-align: center;
+    font-family: Montserrat Alternates;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__form {
+    margin: 0 auto;
+    max-width: 310px;
+  }
+}
+.footer {
+  &__email {
+    margin-top: 11px;
+    margin-right: 15px;
+    width: 190px;
+    height: 30px;
+    background: $twenty-two-color;
+    color: $fifth-color;
+    padding-left: 14px;
+    font-family: Montserrat;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  &__btn {
+    width: 100px;
+    height: 30px;
+    flex-shrink: 0;
+    color: $sixth-color;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background-color: $fifth-color;
   }
 }
