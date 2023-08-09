@@ -57,6 +57,32 @@ main {
   flex: 1 1 auto;
 }
 .header {
+  &__burger {
+    position: relative;
+    bottom: 65px;
+    right: 176px;
+    padding-left: 235px;
+    // padding-bottom: 39px;
+    display: none;
+    align-items: center;
+    // justify-content: center;
+    width: 294.117px;
+    height: 70.75px;
+    box-shadow: 0px 0px 10px 0px rgba(255, 199, 0, 0.6);
+    transform: rotate(45deg);
+    flex-shrink: 0;
+    border-radius: 46.709px;
+    background: #ffc700;
+  }
+}
+.header__burger::after {
+  content: "";
+  position: absolute;
+  bottom: 80px;
+  right: 185px;
+}
+
+.header {
   position: sticky;
   max-width: 100%;
   height: 126px;
@@ -67,7 +93,7 @@ main {
     max-width: 1010.049px;
     margin: 0 auto;
     display: flex;
-    padding-left: 1.9375rem;
+    // padding-left: 31px;
     padding-top: 1.25rem;
     align-items: center;
     justify-content: space-between;
@@ -79,7 +105,7 @@ main {
     flex-shrink: 0;
     border-radius: 0.9375rem;
     border: 1px solid $second-color;
-    padding-left: 2rem;
+    padding-left: 32px;
 
     font-family: Inter;
     font-size: 12px;
@@ -244,8 +270,8 @@ main {
 }
 .services {
   margin: 0 auto;
-  width: 1092px;
-  height: 1159px;
+  max-width: 100%;
+
   margin-top: 149px;
 
   &__head {
@@ -269,10 +295,12 @@ main {
   }
 
   &__grid {
+    margin: 0 auto;
     margin-top: 83px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    row-gap: 132px;
+    max-width: 1090px;
+    justify-content: space-between;
   }
 
   &__item {
@@ -380,7 +408,7 @@ main {
   }
 }
 .shares {
-  width: 1450px;
+  max-width: 1450px;
   margin: 0 auto;
   background-image: url(/src/img/shares_bg.png);
   background-repeat: no-repeat;
@@ -1025,6 +1053,14 @@ main {
   }
 }
 .footer {
+  &__img {
+    &_last {
+      display: none;
+    }
+  }
+}
+
+.footer {
   &__email {
     margin-top: 11px;
     margin-right: 15px;
@@ -1052,5 +1088,674 @@ main {
     font-weight: 500;
     line-height: normal;
     background-color: $fifth-color;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .selling {
+    &__content {
+      &_last {
+        display: none;
+      }
+    }
+  }
+
+  .communication {
+    &__buttom {
+      margin: 0 auto;
+      margin-top: 205px;
+      max-width: 285px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__info {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 283px;
+      height: 343px;
+      border-radius: 40px 0px;
+      background: $fourteen-color;
+    }
+
+    &__img {
+      margin-top: 58px;
+    }
+
+    &__head {
+      margin-top: 45px;
+      color: $second-color;
+      font-family: Montserrat;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+
+    &__paragraph {
+      margin-top: 30px;
+      color: $fourth-color;
+      text-align: center;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+  .footer {
+    &__img {
+      display: none;
+      &_last {
+        max-width: 300px;
+        display: flex;
+
+        align-items: center;
+        column-gap: 20px;
+      }
+    }
+    &__content {
+      margin: 0 auto;
+
+      max-width: 829px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  .header {
+    &__top {
+      max-width: 879px;
+    }
+  }
+
+  .hero {
+    display: flex;
+    align-items: center;
+    max-width: 1350px;
+    height: 760px;
+    margin: 0 auto;
+    margin-top: 75px;
+    background: url(/src/img/hero_bg2.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    &__content {
+      margin-left: 70px;
+      max-width: 542px;
+      height: 436px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &__title {
+      @include title($second-color, 5.125rem, 800);
+      width: 542px;
+      height: 234px;
+      line-height: 95%;
+    }
+
+    &__slogan {
+      @include title($fifth-color, 5.125rem, 800);
+
+      text-shadow: 0px 0px 15px rgba(255, 202, 13, 0.5);
+    }
+
+    &__text {
+      @include text($twenty-four-color, 1.5rem, $fwt);
+      width: 500px;
+      height: 60px;
+      line-height: normal;
+    }
+
+    &__link {
+      width: 200px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: $fifth-color;
+      background: $fifth-color;
+      box-shadow: 0px 0px 10px 0px rgba(255, 199, 0, 0.6);
+      color: $seventeen-color;
+      font-family: Montserrat;
+      flex-shrink: 0;
+      font-size: 1.25rem;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 100%; /* 20px */
+      text-transform: uppercase;
+    }
+  }
+  .services {
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+      max-width: 728px;
+    }
+  }
+
+  .printing {
+    &__img-my {
+      display: none;
+    }
+    &__img {
+      background: url(/src/img/Vector\ 9.png) no-repeat;
+      background-position: left center;
+    }
+  }
+
+  .shares {
+    max-width: 1450px;
+    margin: 0 auto;
+    background-image: url(/src/img/shares_bg.png);
+    background-repeat: no-repeat;
+    &__head {
+      margin-left: 164px;
+      @include title($second-color, 3rem, 600);
+    }
+
+    &__slogan {
+      color: $fifth-color;
+    }
+
+    &__sub-title {
+      margin-left: 164px;
+      color: $fourth-color;
+      font-family: Montserrat;
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }
+
+    &__content {
+      position: relative;
+      display: flex;
+      max-width: 1280px;
+      height: 630px;
+      margin: 0 auto;
+    }
+
+    &__text {
+      background: url(/src/img/icon_1_shares.png) no-repeat;
+      background-position: left center;
+      position: relative;
+      z-index: 3;
+      // margin-top: 142px;
+      display: flex;
+      flex-direction: column;
+      padding-left: 91px;
+      height: 254px;
+    }
+
+    &__title {
+      color: $twenty-one-color;
+
+      font-family: Montserrat;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+
+    &__paragraph {
+      margin-top: 10px;
+      margin-bottom: 34px;
+      max-width: 392px;
+      color: $eleven-color;
+      font-family: Montserrat;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    &__button {
+      color: $fourth-color;
+      font-family: Montserrat;
+      font-size: 1.25rem;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 100%; /* 20px */
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 200px;
+      height: 60px;
+      background-color: $fifteen-color;
+      box-shadow: 0px 0px 25px 0px rgba(15, 15, 15, 0.9);
+    }
+
+    &__img {
+      z-index: 2;
+      position: absolute;
+      left: 450px;
+      bottom: 100px;
+      width: 675.131px;
+      height: 604.232px;
+      background: url(/src/img/icon_2_shares.png) no-repeat;
+      background-position: center;
+    }
+  }
+
+  .catalog {
+    margin: 0 auto;
+    max-width: 1440px;
+    margin-top: 226px;
+    &__head {
+      color: $second-color;
+      text-align: center;
+      font-family: Montserrat;
+      font-size: 4.5rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    &__slogan {
+      color: $fifth-color;
+    }
+
+    &__sub-title {
+      color: $twelve-color;
+      text-align: center;
+      font-family: Montserrat Alternates;
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }
+
+    &__grid {
+      margin: 0 auto;
+      margin-top: 159px;
+      max-width: 1099px;
+      height: 1065px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    &__content {
+      width: 273px;
+      height: 331px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: $seventh-color;
+    }
+
+    &__img {
+      width: 195.199px;
+      height: 177.878px;
+      margin-top: 45px;
+    }
+
+    &__title {
+      margin-top: 12px;
+      color: $fourth-color;
+
+      text-align: center;
+      font-family: Montserrat;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    &__link {
+      color: $fifth-color;
+      text-align: center;
+      font-family: Montserrat Alternates;
+      font-size: 0.875rem;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }
+  }
+
+  .doubts {
+    margin: 0 auto;
+    max-width: 1006px;
+    height: 652px;
+    margin-top: 185px;
+    margin-bottom: 260px;
+
+    &__title {
+      color: $fourth-color;
+      font-family: Montserrat;
+      font-size: 3rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+
+    &__slogan {
+      color: $fifth-color;
+    }
+
+    &__sub-title {
+      color: $twelve-color;
+      font-family: Montserrat Alternates;
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }
+
+    &__video {
+      margin-top: 40px;
+      margin-left: 0px;
+    }
+  }
+
+  .communication {
+    margin: 0 auto;
+    max-width: 1440px;
+
+    &__title {
+      color: $second-color;
+      text-align: center;
+      font-family: Montserrat;
+      font-size: 4.5rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    &__slogan {
+      color: $fifth-color;
+    }
+
+    &__sub-title {
+      color: $twelve-color;
+      text-align: center;
+      font-family: Montserrat Alternates;
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }
+
+    &__content {
+      margin: 0 auto;
+      max-width: 535px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-top: 208px;
+    }
+
+    &__info {
+    }
+
+    &__form {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 440px;
+    }
+
+    &__name {
+      width: 454px;
+      height: 60px;
+      padding-left: 41px;
+      background: url(/src/img/communication__bg.png) no-repeat;
+      color: $fifth-color;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    &__icons {
+      margin: 0 auto;
+      margin-top: 35px;
+      width: 160px;
+    }
+
+    &__icom {
+    }
+
+    &__map {
+      margin-top: 65px;
+    }
+  }
+  .communication {
+    &__button {
+      margin: auto;
+      margin-top: 40px;
+      width: 200px;
+      height: 60px;
+      background: $fifth-color;
+      box-shadow: 0px 0px 10px 0px rgba(255, 199, 0, 0.6);
+      color: $seventeen-color;
+      font-family: Montserrat;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 100%; /* 20px */
+      text-transform: uppercase;
+    }
+  }
+  .communication {
+    &__buttom {
+      margin: 0 auto;
+      margin-top: 205px;
+      width: 969px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 283px;
+      height: 343px;
+      border-radius: 40px 0px;
+      background: $fourteen-color;
+    }
+
+    &__img {
+      margin-top: 58px;
+    }
+
+    &__head {
+      margin-top: 45px;
+      color: $second-color;
+      font-family: Montserrat;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+
+    &__paragraph {
+      margin-top: 30px;
+      color: $fourth-color;
+      text-align: center;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    &__top {
+      position: relative;
+      bottom: 70px;
+    }
+    &__search {
+      width: 160px;
+      margin-left: 108px;
+    }
+    &__burger {
+      display: flex;
+    }
+    &__bottom {
+      display: none;
+    }
+  }
+  .hero {
+    display: flex;
+    align-items: center;
+    max-width: 1350px;
+    height: 760px;
+    margin: 0 auto;
+    margin-top: 75px;
+    background: url(/src/img/hero_bg3.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    &__content {
+      margin-left: 30px;
+      max-width: 542px;
+      height: 386px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    &__title {
+      @include title($second-color, 4rem, 800);
+      width: 423px;
+      height: 183px;
+      line-height: 95%;
+    }
+
+    &__slogan {
+      @include title($fifth-color, 4rem, 800);
+
+      text-shadow: 0px 0px 15px rgba(255, 202, 13, 0.5);
+    }
+
+    &__text {
+      @include text($twenty-four-color, 1rem, $fwt);
+      width: 383px;
+      height: 60px;
+      line-height: normal;
+    }
+
+    &__link {
+      width: 200px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: $fifth-color;
+      background: $fifth-color;
+      box-shadow: 0px 0px 10px 0px rgba(255, 199, 0, 0.6);
+      color: $seventeen-color;
+      font-family: Montserrat;
+      flex-shrink: 0;
+      font-size: 1.25rem;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 100%; /* 20px */
+      text-transform: uppercase;
+    }
+  }
+  .shares {
+    max-width: 1450px;
+    margin: 0 auto;
+    background-image: url(/src/img/shares_bg.png);
+    background-repeat: no-repeat;
+    &__head {
+      margin-left: 164px;
+      @include title($second-color, 3rem, 600);
+    }
+
+    &__slogan {
+      color: $fifth-color;
+    }
+
+    &__sub-title {
+      margin-left: 164px;
+      color: $fourth-color;
+      font-family: Montserrat;
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }
+
+    &__content {
+      position: relative;
+      display: flex;
+      width: 1280px;
+      height: 630px;
+      margin: 0 auto;
+    }
+
+    &__text {
+      background: url(/src/img/icon_1_shares.png) no-repeat;
+      background-position: left center;
+      position: relative;
+      z-index: 3;
+      margin-top: 142px;
+      display: flex;
+      flex-direction: column;
+      padding-left: 91px;
+      height: 254px;
+    }
+
+    &__title {
+      color: $twenty-one-color;
+      font-family: Montserrat;
+      font-size: 2.75rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+
+    &__paragraph {
+      margin-top: 10px;
+      margin-bottom: 34px;
+      width: 587px;
+      color: $eleven-color;
+      font-family: Montserrat;
+      font-size: 1.5rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    &__button {
+      color: $fourth-color;
+      font-family: Montserrat;
+      font-size: 1.25rem;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 100%; /* 20px */
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 200px;
+      height: 60px;
+      background-color: $fifteen-color;
+      box-shadow: 0px 0px 25px 0px rgba(15, 15, 15, 0.9);
+    }
+
+    &__img {
+      z-index: 2;
+      position: absolute;
+      left: 250px;
+      bottom: 100px;
+      width: 675.131px;
+      height: 604.232px;
+      background: url(/src/img/icon_2_shares.png) no-repeat;
+      background-position: right center;
+    }
   }
 }

@@ -57,6 +57,31 @@ main {
   flex: 1 1 auto;
 }
 .header {
+  &__burger {
+    position: relative;
+    bottom: 65px;
+    right: 176px;
+    padding-left: 235px;
+    // padding-bottom: 39px;
+    display: none;
+    align-items: center;
+    // justify-content: center;
+    width: 294.117px;
+    height: 70.75px;
+    box-shadow: 0px 0px 10px 0px rgba(255, 199, 0, 0.6);
+    transform: rotate(45deg);
+    flex-shrink: 0;
+    border-radius: 46.709px;
+    background: #ffc700;
+  }
+}
+.header__burger::after {
+  content: "";
+  position: absolute;
+  bottom: 80px;
+  right: 185px;
+}
+.header {
   position: sticky;
   max-width: 100%;
   height: 126px;
@@ -68,7 +93,7 @@ main {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding-left: 31px;
+    // padding-left: 31px;
     padding-top: 20px;
     align-items: center;
   }
@@ -177,6 +202,116 @@ main {
   color: $nineteen-color;
   font-weight: 700;
   background: url(/src/img/background.png) no-repeat;
+}
+
+.profile {
+  &__top {
+    width: 178px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.profile {
+  margin: 0 auto;
+  width: 1008px;
+  margin-top: 55px;
+
+  &__title {
+    // text-align: center;
+    margin-bottom: 10px;
+    color: $fourth-color;
+    font-family: Montserrat;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  &__sub-title {
+    width: 95px;
+    color: #a7a7a7;
+    text-align: center;
+    // margin-top: 10px;
+    font-family: Montserrat Alternates;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__wrapper {
+    margin: 0 auto;
+    display: flex;
+    max-width: 1008px;
+    justify-content: space-between;
+    margin-top: 50px;
+
+    &_content {
+      display: flex;
+      flex-direction: column;
+      row-gap: 50px;
+    }
+  }
+
+  &__head {
+    color: $fifth-color;
+    font-family: Montserrat Alternates;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 365px;
+    height: 63px;
+    background: url(/src/img/bg__profile.png) no-repeat;
+  }
+
+  &__content {
+    display: flex;
+    column-gap: 20px;
+    width: 400px;
+    height: 163px;
+  }
+
+  &__img {
+  }
+
+  &__text {
+  }
+
+  &__header {
+    margin-top: 16px;
+    color: $fourth-color;
+    font-family: Montserrat;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__sub-header {
+    color: #b5b5b5;
+    font-family: Montserrat;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__price {
+    margin-top: 19px;
+    color: $fifth-color;
+    font-family: Montserrat;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
 }
 
 .footer {
@@ -331,9 +466,77 @@ main {
   &__content {
     margin: 0 auto;
 
-    width: 1125px;
+    max-width: 1125px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+}
+.footer {
+  &__img {
+    &_last {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    &__top {
+      max-width: 879px;
+    }
+    .profile {
+      &__wrapper {
+        margin: 0 auto;
+        display: flex;
+        max-width: 1008px;
+        justify-content: space-between;
+        margin-top: 50px;
+
+        &_content {
+          display: flex;
+          flex-direction: column;
+          row-gap: 50px;
+        }
+      }
+    }
+  }
+  .footer {
+    &__img {
+      display: none;
+      &_last {
+        max-width: 300px;
+        display: flex;
+
+        align-items: center;
+        column-gap: 20px;
+      }
+    }
+    &__content {
+      margin: 0 auto;
+
+      max-width: 829px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    &__top {
+      position: relative;
+      bottom: 70px;
+    }
+    &__search {
+      width: 160px;
+      margin-left: 108px;
+    }
+    &__burger {
+      display: flex;
+    }
+    &__bottom {
+      display: none;
+    }
   }
 }
